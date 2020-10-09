@@ -85,7 +85,7 @@ export class GameBoard extends React.Component {
 	};
 	render() {
 		return (
-			<div className="board">
+			<div className={this.props.player ? "board" : "d-none"}>
 				<div className="row">
 					{" "}
 					<div
